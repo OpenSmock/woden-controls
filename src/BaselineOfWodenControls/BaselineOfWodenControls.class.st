@@ -28,9 +28,3 @@ BaselineOfWodenControls >> dependencies: spec [
 		baseline: 'WodenCoreExamples' with: [ spec repository: 'github://desromech/woden-core-examples' ].
 
 ]
-
-{ #category : #baselines }
-BaselineOfWodenControls >> postload: loader package: packageSpec [
-
-	UIManager default proceed: 'WodenControls is loaded'.
-]
