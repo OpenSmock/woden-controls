@@ -10,8 +10,6 @@ BaselineOfWodenControls >> baseline: spec [
 	spec
 		for: #common
 		do: [
-			spec postLoadDoIt: #'postload:package:'.
-
 			"Dependencies"
 			self dependencies: spec.
 
