@@ -12,10 +12,21 @@ BaselineOfWodenControls >> baseline: spec [
 		do: [
 			spec postLoadDoIt: #'postload:package:'.
 
+			"Dependencies"
+			self dependencies: spec.
+
 			"Packages"
 			spec
 				package: 'WodenControls'
 		]
+]
+
+{ #category : #baselines }
+BaselineOfHeloVis >> dependencies: spec [
+
+	spec
+		baseline: 'WodenCoreExamples' with: [ spec repository: 'github://desromech/woden-core-examples' ].
+
 ]
 
 { #category : #baselines }
