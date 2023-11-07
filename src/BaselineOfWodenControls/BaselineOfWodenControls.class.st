@@ -22,7 +22,7 @@ BaselineOfWodenControls >> baseline: spec [
 ]
 
 { #category : #baselines }
-BaselineOfHeloVis >> dependencies: spec [
+BaselineOfWodenControls >> dependencies: spec [
 
 	spec
 		baseline: 'WodenCoreExamples' with: [ spec repository: 'github://desromech/woden-core-examples' ].
@@ -33,9 +33,4 @@ BaselineOfHeloVis >> dependencies: spec [
 BaselineOfWodenControls >> postload: loader package: packageSpec [
 
 	UIManager default proceed: 'WodenControls is loaded'.
-]
-
-{ #category : #baselines }
-BaselineOfWodenControls >> projectClass [
-	^ MetacelloCypressBaselineProject
 ]
